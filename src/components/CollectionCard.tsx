@@ -41,7 +41,7 @@ const CollectionCard = ({ nft, marketplaceContract, nftContract }: Props) => {
 				NFTMARKETPLACE_ADDRESS,
 				true,
 			])
-			console.log(tx)
+			// console.log(tx)
 		}
 	}
 
