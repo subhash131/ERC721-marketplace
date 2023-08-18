@@ -20,7 +20,7 @@ const NFTCard = ({ nft, marketplaceContract }: Props) => {
 				nft.id,
 				1
 			)
-			console.log(tx)
+			setTxLoading(false)
 		} catch (e) {
 			setTxLoading(false)
 			console.log(e)
