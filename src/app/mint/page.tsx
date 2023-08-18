@@ -77,7 +77,7 @@ const page = () => {
 						<input
 							className='bg-transparent px-2 rounded-r-md border border-[grey] outline-0'
 							id='name'
-							placeholder='#1'
+							placeholder='name..'
 							ref={nameInputRef}
 						/>
 					</div>
