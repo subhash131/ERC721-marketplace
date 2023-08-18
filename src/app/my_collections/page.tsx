@@ -9,7 +9,6 @@ import {
 	useContract,
 	useOwnedNFTs,
 } from "@thirdweb-dev/react"
-import React, { useEffect, useState } from "react"
 import { Text } from "@tremor/react"
 
 const page = () => {
