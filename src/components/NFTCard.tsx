@@ -20,7 +20,7 @@ const NFTCard = ({ nft, marketplaceContract }: Props) => {
 				nft.id,
 				1
 			)
-			window.location.href = "/my_collections"
+			window.location.href= "/my_collections"
 			setTxLoading(false)
 		} catch (e) {
 			setTxLoading(false)
