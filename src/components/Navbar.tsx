@@ -29,7 +29,7 @@ export function Navbar() {
 
 	return (
 		<ThirdwebProvider activeChain='mumbai' clientId={THIRDWEB_CLIENT_ID}>
-			<div className='relative w-full text-white transition-all'>
+			<div className='relative w-full z transition-all'>
 				<div className='mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8'>
 					<div className='inline-flex items-center space-x-2'>
 						<span className='font-bold'>Marketplace</span>
