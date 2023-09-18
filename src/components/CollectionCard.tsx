@@ -6,14 +6,9 @@ import {
 	SmartContract,
 } from "@thirdweb-dev/sdk"
 import React, { useRef, useState } from "react"
-import { Card, TextInput } from "@tremor/react"
-import { ethers } from "ethers"
+import { Card } from "@tremor/react"
 import SpinAnimation from "./SpinAnimation"
-import {
-	useAddress,
-	useCreateDirectListing,
-	useDirectListing,
-} from "@thirdweb-dev/react"
+import { useCreateDirectListing } from "@thirdweb-dev/react"
 import { LION_NFT_CONTRACT_ADDRESS, NFTMARKETPLACE_ADDRESS } from "@/constants"
 import toast, { Toaster } from "react-hot-toast"
 
@@ -27,7 +22,6 @@ const CollectionCard = ({ nft, marketplaceContract, nftContract }: Props) => {
 	// console.log("nft", nft)
 	const priceRef = useRef<HTMLInputElement>(null)
 	const [txLoading, setTxLoading] = useState(false)
-	const userAddress = useAddress()
 	const { mutateAsync: createDirectListing } =
 		useCreateDirectListing(marketplaceContract)
 
@@ -73,7 +67,7 @@ const CollectionCard = ({ nft, marketplaceContract, nftContract }: Props) => {
 	}
 
 	return (
-		<div className=''>
+		<div className='text-white'>
 			<Toaster position='top-center' />
 			<Card className='w-64 h-[25rem] p-1 overflow-hidden'>
 				<img
@@ -86,8 +80,8 @@ const CollectionCard = ({ nft, marketplaceContract, nftContract }: Props) => {
 					<p className='text-white text-sm px-1'>
 						{nft.metadata.name}
 					</p>
-					<div className='flex justify-between '>
-						<div className=''>
+					<div className='flex justify-between text-white '>
+						<div className='text-white'>
 							<input
 								placeholder='0.00'
 								className='w-12 bg-transparent border-none '
@@ -97,7 +91,7 @@ const CollectionCard = ({ nft, marketplaceContract, nftContract }: Props) => {
 								ref={priceRef}
 								required
 							/>{" "}
-							MATIC
+							<span className='text-white'>MATIC</span>{" "}
 						</div>
 						{txLoading ? (
 							<SpinAnimation />

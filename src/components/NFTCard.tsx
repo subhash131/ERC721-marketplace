@@ -37,6 +37,9 @@ const NFTCard = ({ nft, marketplaceContract }: Props) => {
 					className='object-cover w-full h-80 rounded-md hover:scale-150 transition-all'
 					alt='nft'
 					loading='lazy'
+					onClick={() => {
+						buyNft()
+					}}
 				></img>
 				<div className='px-2 py-4'>
 					<p className='text-white text-sm px-1'>{nft.asset.name}</p>
