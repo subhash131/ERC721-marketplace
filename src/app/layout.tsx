@@ -7,7 +7,7 @@ import Thirdweb from "./provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-	title: "NFT Marketplace",
+	title: "NFTHub",
 	description: "ERC721 market",
 }
 
