@@ -34,7 +34,7 @@ const NFTCard = ({ nft, marketplaceContract }: Props) => {
 			<Card className='w-64 h-[25rem] p-1 overflow-hidden'>
 				<img
 					src={nft.asset.image!}
-					className='object-cover w-full h-80 rounded-md hover:scale-150 transition-all'
+					className='object-cover w-full h-80 rounded-md hover:scale-150 transition-all cursor-pointer'
 					alt='nft'
 					loading='lazy'
 					onClick={() => {
